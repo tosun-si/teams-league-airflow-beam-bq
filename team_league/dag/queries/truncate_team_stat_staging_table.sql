@@ -1,0 +1,1 @@
+TRUNCATE TABLE `{{project_id}}.{{dataset}}.{{team_stat_staging_table}}`;
