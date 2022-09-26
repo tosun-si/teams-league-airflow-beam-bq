@@ -47,7 +47,7 @@ with airflow.DAG(
         )
     )
 
-    merge_final_table_query = get_jinja_template('merge_team_stat_table.sql').render(
+    merge_final_table_query = get_jinja_template('merge_team_stat_table_no_duplicates.sql').render(
         project_id=settings.project_id,
         dataset=settings.dataset,
         team_stat_table=settings.team_stat_table,
